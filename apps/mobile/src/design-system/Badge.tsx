@@ -1,17 +1,19 @@
-import React from 'react';
+﻿import React from 'react';
 
 export interface BadgeProps {
   children: React.ReactNode;
   variant?: 'success' | 'warning' | 'danger' | 'info' | 'neutral';
   size?: 'sm' | 'md';
   dot?: boolean;
+  className?: string;
 }
 
 export const Badge: React.FC<BadgeProps> = ({
   children,
   variant = 'neutral',
   size = 'md',
-  dot = false
+  dot = false,
+  className = ''
 }) => {
   const variantStyles = {
     success: 'bg-[#E6F4EF] text-[#064E3B] border-[#0B6E4F]/20',
@@ -35,10 +37,9 @@ export const Badge: React.FC<BadgeProps> = ({
   }[size];
 
   return (
-    <span className={`inline-flex items-center gap-1.5 font-medium rounded-full border ${variantStyles} ${sizeStyles}`}>
+    <span className={`inline-flex items-center gap-1.5 font-medium rounded-full border ${variantStyles} ${sizeStyles} ${className}`}>
       {dot && <span className={`w-1.5 h-1.5 rounded-full ${dotColors}`} />}
       {children}
     </span>
   );
 };
-

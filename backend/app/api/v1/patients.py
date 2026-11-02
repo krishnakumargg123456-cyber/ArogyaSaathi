@@ -13,6 +13,50 @@ from app.api.deps import get_current_user, require_role
 from app.services.patient_service import create_patient
 from app.services.audit_service import log_audit_event
 
+
+# Authenticated patient self-profile API.
+# Kept separate from the staff-only patient registry router.
+patient_self_router = APIRouter(
+    prefix="/patients",
+    tags=["Patient Self Service"],
+    dependencies=[Depends(require_role(["PATIENT"]))],
+)
+
+
+@patient_self_router.get("/me", response_model=PatientOut)
+def get_my_patient_profile(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    patient = db.query(Patient).filter(
+        Patient.user_id == current_user.id,
+        Patient.is_active.is_(True),
+    ).first()
+
+    if not patient:
+        raise HTTPException(status_code=404, detail="Patient profile not found.")
+
+    has_active_consent = db.query(Consent.id).filter(
+        Consent.patient_id == patient.id,
+        Consent.status == "ACTIVE",
+    ).first() is not None
+
+    return PatientOut(
+        id=patient.id,
+        internal_id=patient.internal_id,
+        name=patient.name,
+        age=patient.age,
+        gender=patient.gender,
+        phone=patient.phone,
+        village_id=patient.village_id,
+        village_name=patient.village.name if patient.village else None,
+        address=patient.address,
+        emergency_contact=patient.emergency_contact,
+        chronic_conditions=patient.chronic_conditions,
+        has_active_consent=has_active_consent,
+        created_at=patient.created_at,
+    )
+
 router = APIRouter(
     prefix="/patients",
     tags=["Patients"],

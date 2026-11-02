@@ -1,3 +1,5 @@
 include ':app'
 rootProject.name = 'ArogyaSaathiMobile'
 
+
+apply from: 'capacitor.settings.gradle'
