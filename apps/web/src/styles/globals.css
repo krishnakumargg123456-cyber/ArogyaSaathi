@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-primary: #0A4333;
+    --brand-secondary: #0F5B47;
+    --brand-surface: #F4FBF8;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    @apply bg-surface-light text-slate-900 antialiased selection:bg-brand-100 selection:text-brand-900 min-h-screen flex flex-col;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans Devanagari", sans-serif;
+  }
+
+  @keyframes homepage-rise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes homepage-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes homepage-bar {
+    from {
+      transform: scaleY(0.35);
+      opacity: 0.45;
+    }
+    to {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  /* Accessible focus rings */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-700 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-rise {
+    animation: homepage-rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .animate-float {
+    animation: homepage-float 6s ease-in-out infinite;
+  }
+
+  .animate-bar {
+    animation: homepage-bar 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+}

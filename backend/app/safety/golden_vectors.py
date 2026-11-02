@@ -1,0 +1,50 @@
+"""
+Shared Golden Rule Test Vectors
+Used in CI/CD and mobile-server parity verification
+"""
+GOLDEN_RULE_VECTORS = [
+    {
+        "id": "GV-001-HYPERTENSIVE-CRISIS",
+        "description": "Patient with BP 182/116 mmHg and headache must trigger EMERGENCY and BP_002",
+        "symptoms": [{"name": "headache", "duration_days": 2, "severity": "SEVERE"}],
+        "vitals": {"systolic_bp": 182, "diastolic_bp": 116},
+        "expected_level": "EMERGENCY",
+        "expected_urgent": True,
+        "expected_rule": "RULE_BP_002_HYPERTENSIVE_CRISIS"
+    },
+    {
+        "id": "GV-002-SEVERE-RESPIRATORY-DISTRESS",
+        "description": "Child with stridor and chest indrawing must trigger EMERGENCY and RESP_001",
+        "symptoms": [{"name": "stridor", "severity": "SEVERE"}, {"name": "chest_indrawing", "severity": "SEVERE"}],
+        "vitals": {},
+        "expected_level": "EMERGENCY",
+        "expected_urgent": True,
+        "expected_rule": "RULE_RESP_001_SEVERE_DISTRESS"
+    },
+    {
+        "id": "GV-003-FEVER-WITH-CONFUSION",
+        "description": "Patient with fever and altered mental status must trigger EMERGENCY and FEV_004",
+        "symptoms": [{"name": "fever", "duration_days": 3}, {"name": "confusion", "severity": "MODERATE"}],
+        "vitals": {"temperature": 103.2},
+        "expected_level": "EMERGENCY",
+        "expected_urgent": True,
+        "expected_rule": "RULE_FEV_004_FEVER_WITH_CONFUSION"
+    },
+    {
+        "id": "GV-004-STAGE-2-HYPERTENSION",
+        "description": "Routine patient with BP 148/92 mmHg must trigger PRIORITY Stage 2 HTN",
+        "symptoms": [],
+        "vitals": {"systolic_bp": 148, "diastolic_bp": 92},
+        "expected_level": "PRIORITY",
+        "expected_urgent": False,
+        "expected_rule": "RULE_BP_001_HYPERTENSION_STAGE2"
+    },
+    {
+        "id": "GV-005-MISSING-TEMPERATURE",
+        "description": "Fever reported without temperature measurement must flag missing input",
+        "symptoms": [{"name": "fever", "duration_days": 2}],
+        "vitals": {},
+        "expected_missing": "temperature"
+    }
+]
+

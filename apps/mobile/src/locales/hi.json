@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "होम",
+    "patients": "मरीज़",
+    "voice_triage": "आवाज़ से जाँच",
+    "referrals": "रेफ़रल",
+    "more": "और"
+  },
+  "home": {
+    "welcome": "नमस्ते",
+    "todays_priority": "आज की प्राथमिकताएं",
+    "tasks_pending": "कार्य लंबित",
+    "registered_patients": "पंजीकृत मरीज़",
+    "follow_up_visits": "फ़ॉलो-अप विज़िट",
+    "open_referrals": "खुले रेफ़रल",
+    "appointments": "अपॉइंटमेंट",
+    "quick_actions": "त्वरित कार्य",
+    "register_new_patient": "नया मरीज़ पंजीकृत करें",
+    "start_voice_triage": "आवाज़ से जाँच शुरू करें",
+    "book_appointment": "अपॉइंटमेंट बुक करें",
+    "track_referrals": "रेफ़रल ट्रैक करें",
+    "urgent_attention": "अत्यावश्यक ध्यान दें",
+    "follow_ups_due": "देय फ़ॉलो-अप",
+    "saved_on_device": "फ़ोन में सहेजा गया",
+    "synced": "सिंक हो गया",
+    "pending_sync": "सिंक लंबित"
+  },
+  "triage": {
+    "speak_symptoms": "मरीज़ के लक्षण हिन्दी या अंग्रेज़ी में बोलें",
+    "record": "रिकॉर्ड करें",
+    "stop": "रोकें",
+    "live_transcript": "लाइव ट्रांसक्रिप्ट",
+    "type_instead": "टाइप करें",
+    "safety_check": "सुरक्षा जाँच परिणाम",
+    "urgent_refer_now": "अत्यावश्यक - अभी रेफ़र करें",
+    "needs_doctor_review": "डॉक्टर की समीक्षा आवश्यक",
+    "no_red_flag": "कोई ख़तरा नहीं - सामान्य सलाह",
+    "create_urgent_referral": "अत्यावश्यक रेफ़रल बनाएं",
+    "call_phc": "पीएचसी को कॉल करें"
+  },
+  "appointments": {
+    "find_doctor": "डॉक्टर खोजें",
+    "available_slots": "उपलब्ध स्लॉट",
+    "slot_taken": "यह स्लॉट अभी भर गया - दूसरा चुनें",
+    "request_saved_offline": "अनुरोध फ़ोन में सहेजा गया - अभी पुष्टि नहीं हुई",
+    "confirmed": "पुष्टि हो गई",
+    "cancelled": "रद्द",
+    "no_show": "उपस्थित नहीं हुए",
+    "todays_appointments": "आज की अपॉइंटमेंट",
+    "confirm_booking": "बुकिंग की पुष्टि करें"
+  },
+  "clinical": {
+    "blood_pressure": "रक्तचाप",
+    "blood_sugar": "रक्त शर्करा",
+    "temperature": "तापमान",
+    "pulse": "नाड़ी गति",
+    "spo2": "ऑक्सीजन (SpO2)"
+  }
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRD Section 9.2 Color Tokens -->
+    <color name="primary_green">#0B6E4F</color>
+    <color name="deep_green">#064E3B</color>
+    <color name="mint_surface">#E6F4EF</color>
+    <color name="amber_warning">#F59E0B</color>
+    <color name="red_urgent">#DC2626</color>
+    <color name="blue_info">#2563EB</color>
+    <color name="ink_text">#1F2937</color>
+    <color name="screen_surface">#F7FAF9</color>
+</resources>
+

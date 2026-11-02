@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" fill="none">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1F8F3"/>
+      <stop offset="1" stop-color="#DCEDE3"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="735" y1="102" x2="1128" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B6E4F"/>
+      <stop offset="1" stop-color="#064E3B"/>
+    </linearGradient>
+    <filter id="shadow" x="677" y="75" width="544" height="580" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="20"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.02 0 0 0 0 0.16 0 0 0 0 0.1 0 0 0 0.14 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <path fill="url(#background)" d="M0 0h1280v720H0z"/>
+  <circle cx="92" cy="635" r="205" fill="#D1E8D9" fill-opacity=".7"/>
+  <circle cx="1200" cy="42" r="176" fill="#E9DAB5" fill-opacity=".24"/>
+  <rect x="78" y="96" width="194" height="38" rx="19" fill="#fff" fill-opacity=".84"/>
+  <path d="M99 115c0-6 9-9 13-2 4-7 13-4 13 2 0 8-13 15-13 15s-13-7-13-15Z" fill="#0B6E4F"/>
+  <text x="137" y="120" fill="#0B6E4F" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.2">AROGYASAATHI</text>
+  <text x="78" y="226" fill="#10251C" font-family="Arial,sans-serif" font-size="48" font-weight="700">Care that stays</text>
+  <text x="78" y="284" fill="#10251C" font-family="Arial,sans-serif" font-size="48" font-weight="700">connected.</text>
+  <text x="80" y="333" fill="#50645B" font-family="Arial,sans-serif" font-size="20">From a community visit to the next step in care.</text>
+  <path d="M81 401h12l8-16 12 32 12-24 8 8h20" stroke="#0B6E4F" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <text x="80" y="470" fill="#24483A" font-family="Arial,sans-serif" font-size="17" font-weight="600">Consent  ·  Safety review  ·  Follow-up</text>
+  <g filter="url(#shadow)">
+    <rect x="717" y="115" width="464" height="500" rx="24" fill="#fff"/>
+    <path d="M741 115h416a24 24 0 0 1 24 24v54H717v-54a24 24 0 0 1 24-24Z" fill="url(#panel)"/>
+    <rect x="746" y="135" width="37" height="37" rx="11" fill="#fff" fill-opacity=".16"/>
+    <path d="M756 153c0-5 7-7 9-1 3-6 10-4 10 1 0 6-10 12-10 12s-9-6-9-12Z" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <text x="796" y="151" fill="#fff" font-family="Arial,sans-serif" font-size="17" font-weight="700">ArogyaSaathi</text>
+    <text x="796" y="170" fill="#D9EEE4" font-family="Arial,sans-serif" font-size="12">FIELD WORKER APP</text>
+    <rect x="1045" y="140" width="103" height="26" rx="13" fill="#fff" fill-opacity=".13"/>
+    <text x="1060" y="157" fill="#fff" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing=".8">SAMPLE DATA</text>
+    <text x="754" y="231" fill="#0B6E4F" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.3">COMMUNITY VISIT</text>
+    <text x="754" y="267" fill="#15241D" font-family="Arial,sans-serif" font-size="24" font-weight="700">One clear next step</text>
+    <text x="754" y="294" fill="#617168" font-family="Arial,sans-serif" font-size="14">A shared workflow for local care teams.</text>
+    <rect x="750" y="325" width="398" height="60" rx="12" fill="#F3F8F4" stroke="#E1EAE3"/>
+    <circle cx="778" cy="355" r="14" fill="#0B6E4F"/>
+    <path d="m772 355 4 4 8-9" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <text x="804" y="352" fill="#25372E" font-family="Arial,sans-serif" font-size="15" font-weight="600">Record with consent</text>
+    <text x="804" y="371" fill="#64736A" font-family="Arial,sans-serif" font-size="12">Purpose explained to the patient</text>
+    <rect x="750" y="399" width="398" height="60" rx="12" fill="#fff" stroke="#E1EAE3"/>
+    <circle cx="778" cy="429" r="14" fill="#EAF3ED"/>
+    <text x="773" y="434" fill="#0B6E4F" font-family="Arial,sans-serif" font-size="13" font-weight="700">2</text>
+    <text x="804" y="426" fill="#25372E" font-family="Arial,sans-serif" font-size="15" font-weight="600">Review symptoms</text>
+    <text x="804" y="445" fill="#64736A" font-family="Arial,sans-serif" font-size="12">Use safety rules approved for the workflow</text>
+    <rect x="750" y="473" width="398" height="60" rx="12" fill="#fff" stroke="#E1EAE3"/>
+    <circle cx="778" cy="503" r="14" fill="#EAF3ED"/>
+    <text x="773" y="508" fill="#0B6E4F" font-family="Arial,sans-serif" font-size="13" font-weight="700">3</text>
+    <text x="804" y="500" fill="#25372E" font-family="Arial,sans-serif" font-size="15" font-weight="600">Coordinate follow-up</text>
+    <text x="804" y="519" fill="#64736A" font-family="Arial,sans-serif" font-size="12">Keep the next step visible to the care team</text>
+    <circle cx="1109" cy="565" r="28" fill="#0B6E4F"/>
+    <path d="m1103 552 17 13-17 13v-26Z" fill="#fff"/>
+  </g>
+</svg>

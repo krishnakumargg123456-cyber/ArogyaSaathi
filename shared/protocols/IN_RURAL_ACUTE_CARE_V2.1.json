@@ -1,0 +1,67 @@
+{
+  "protocol_id": "IN_RURAL_ACUTE_CARE_V2.1",
+  "title": "Rural Primary Healthcare Acute Triage and Red Flag Protocol",
+  "version": "2.1.0",
+  "effective_date": "2026-10-30",
+  "authorizing_body": "National Health Governance Review Panel",
+  "clinical_reviewer": "Dr. V. Sharma (MD, Community Medicine)",
+  "status": "ACTIVE",
+  "governance_rules": {
+    "autonomous_diagnosis_permitted": false,
+    "autonomous_prescription_permitted": false,
+    "deterministic_evaluation_required": true,
+    "immutable_audit_snapshot_required": true
+  },
+  "rules": [
+    {
+      "rule_id": "RULE_BP_002_HYPERTENSIVE_CRISIS",
+      "category": "CARDIOVASCULAR",
+      "conditions": {
+        "or": [
+          {"vitals.systolic_bp": {">=": 180}},
+          {"vitals.diastolic_bp": {">=": 120}}
+        ]
+      },
+      "escalation_level": "EMERGENCY",
+      "recommended_action": "Immediate transfer to nearest CHC or District Hospital with medical escort. Call 108 / PHC Ambulance."
+    },
+    {
+      "rule_id": "RULE_RESP_001_SEVERE_DISTRESS",
+      "category": "RESPIRATORY",
+      "conditions": {
+        "or": [
+          {"symptoms.difficulty_breathing.severity": "SEVERE"},
+          {"symptoms.stridor": "PRESENT"},
+          {"symptoms.chest_indrawing": "PRESENT"}
+        ]
+      },
+      "escalation_level": "EMERGENCY",
+      "recommended_action": "Urgent oxygen therapy & emergency CHC referral with paramedic escort."
+    },
+    {
+      "rule_id": "RULE_FEV_004_FEVER_WITH_CONFUSION",
+      "category": "NEUROLOGICAL_SYSTEMIC",
+      "conditions": {
+        "and": [
+          {"symptoms.fever": "PRESENT"},
+          {"symptoms.altered_mental_status": "PRESENT"}
+        ]
+      },
+      "escalation_level": "EMERGENCY",
+      "recommended_action": "Suspected encephalopathy/severe sepsis. Urgent admission and clinician disposition required."
+    },
+    {
+      "rule_id": "RULE_BP_001_HYPERTENSION_STAGE2",
+      "category": "CHRONIC_CARE",
+      "conditions": {
+        "or": [
+          {"vitals.systolic_bp": {">=": 140}},
+          {"vitals.diastolic_bp": {">=": 90}}
+        ]
+      },
+      "escalation_level": "PRIORITY",
+      "recommended_action": "Schedule Medical Officer evaluation at PHC within 24-48 hours. Monitor symptoms closely."
+    }
+  ]
+}
+

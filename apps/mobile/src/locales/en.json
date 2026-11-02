@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Home",
+    "patients": "Patients",
+    "voice_triage": "Voice Triage",
+    "referrals": "Referrals",
+    "more": "More"
+  },
+  "home": {
+    "welcome": "Good Morning",
+    "todays_priority": "Today's Priority",
+    "tasks_pending": "tasks pending",
+    "registered_patients": "Registered Patients",
+    "follow_up_visits": "Follow-up Visits",
+    "open_referrals": "Open Referrals",
+    "appointments": "Appointments",
+    "quick_actions": "Quick Actions",
+    "register_new_patient": "Register New Patient",
+    "start_voice_triage": "Start Voice Triage",
+    "book_appointment": "Book Appointment",
+    "track_referrals": "Track Referrals",
+    "urgent_attention": "Urgent Attention",
+    "follow_ups_due": "Follow-ups Due",
+    "saved_on_device": "Saved on device",
+    "synced": "Synced",
+    "pending_sync": "Pending Sync"
+  },
+  "triage": {
+    "speak_symptoms": "Speak symptoms in Hindi or English",
+    "record": "Record",
+    "stop": "Stop",
+    "live_transcript": "Live Transcript",
+    "type_instead": "Type instead",
+    "safety_check": "Safety Check Result",
+    "urgent_refer_now": "URGENT - Refer Now",
+    "needs_doctor_review": "Needs Doctor Review",
+    "no_red_flag": "No Red Flag - Routine Care",
+    "create_urgent_referral": "Create Urgent Referral",
+    "call_phc": "Call PHC / Doctor"
+  },
+  "appointments": {
+    "find_doctor": "Find Doctor",
+    "available_slots": "Available Slots",
+    "slot_taken": "Slot just taken - please choose another time",
+    "request_saved_offline": "Request saved on device - not confirmed",
+    "confirmed": "Confirmed",
+    "cancelled": "Cancelled",
+    "no_show": "No-Show",
+    "todays_appointments": "Today's Appointments",
+    "confirm_booking": "Confirm Booking"
+  },
+  "clinical": {
+    "blood_pressure": "Blood Pressure",
+    "blood_sugar": "Blood Glucose",
+    "temperature": "Temperature",
+    "pulse": "Pulse",
+    "spo2": "Oxygen (SpO2)"
+  }
+}
+
